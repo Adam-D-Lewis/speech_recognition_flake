@@ -15,7 +15,7 @@
       pname = "speech_recognition";
       version = "v3.10.0";
       src = pkgs.fetchFromGitHub {
-        owner = "Uberi";
+        owner = "Adam-D-Lewis";
         repo = "speech_recognition";
         rev = "8b07762";
         sha256 = "sha256-w+BXfzsEtikPLnHDCI48aXTVLRxfDg43IAOzuAShngY=";
