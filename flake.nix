@@ -3,7 +3,7 @@
 
   inputs = {
     # pulls in the flake.nix file from this github repo    
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
 
   };
 
@@ -34,7 +34,6 @@
         ];
     };
 
-    # not sure why we put itemdb in legacyPackges, but that seems to be the convention.  It may be because nix build .#itemdb will look in itemdb, packages.x86_64-linux.itemdb, and legacyPackages.x86_64-linux.itemdb
     legacyPackages.x86_64-linux = { inherit speech_recognition; };
     defaultPackage.x86_64-linux = legacyPackages.x86_64-linux.speech_recognition;
     
