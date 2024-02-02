@@ -11,6 +11,7 @@
 
     # I'm not sure why I need to import nixpkgs in order for python3Packages to appear. 
     pkgs = import nixpkgs { system = "x86_64-linux"; };
+    
     speech_recognition = pkgs.python3Packages.buildPythonPackage {
       pname = "speech_recognition";
       version = "v3.10.0";
